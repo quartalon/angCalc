@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="angCalc">
+<head>
+    <title>Angular Calculator</title>
+</head>
+<body ng-controller="AngularCalc as ac">
+
+    <h1>Calculator</h1>
+
+    <label>Enter 1st #: </label><input type="number" ng-model="ac.numA" />
+    <br />
+    <label>Enter 2nd #: </label><input type="number" ng-model="ac.numB" />
+    <br />
+    <br />
+    <h4>Click the button of the function you'd like to perform on your numbers: </h4>
+    <br />
+    <button ng-click="ac.addNums()"> + </button>  <button ng-click="ac.subNums()"> - </button>  <button ng-click="ac.multNums()"> * </button>  <button ng-click="ac.divNums()"> / </button>
+    <br />
+    <br />
+    <input type="number" ng-model="ac.result" />
+    <br />
+    <br />
+    <button ng-click="ac.clearInputs()">Clear All</button>
+
+
+
+    <script src="~/bower_components/angular/angular.min.js"></script>
+    <script src="~/ngApp/app.js"></script>
+</body>
+</html>
